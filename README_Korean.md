@@ -267,7 +267,7 @@ my_face_encoding = face_recognition.face_encodings(picture_of_me)[0]
 unknown_picture = face_recognition.load_image_file("unknown.jpg")
 unknown_face_encoding = face_recognition.face_encodings(unknown_picture)[0]
 
-# 이제 `compare_faces`를 통해 두 얼굴이 같은 얼굴인지 비교할 !
+# 이제 `compare_faces`를 통해 두 얼굴이 같은 얼굴인지 비교할 수 있습니다!
 
 results = face_recognition.compare_faces([my_face_encoding], unknown_face_encoding)
 
