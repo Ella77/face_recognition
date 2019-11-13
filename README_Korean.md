@@ -1,6 +1,6 @@
 ﻿# Face Recognition
 
-_[중국어 简体中文版](https://github.com/ageitgey/face_recognition/blob/master/README_Simplified_Chinese.md) 로 번역된 이 파일을 읽으실 수 있습니다._
+본 문서는 _[중국어 简体中文版](https://github.com/ageitgey/face_recognition/blob/master/README_Simplified_Chinese.md) 로부터 번역되어 한국 사용자들의 기여를 통해 만들어진 문서입니다. 
 
 본 라이브러리는 세계에서 가장 간단한 얼굴 인식 라이브러리로, Python 또는 명령 줄(CLI)에서 얼굴을 인식하고 조작해 볼 수 있습니다.
 
@@ -262,12 +262,12 @@ import face_recognition
 picture_of_me = face_recognition.load_image_file("me.jpg")
 my_face_encoding = face_recognition.face_encodings(picture_of_me)[0]
 
-# my_face_encoding now contains a universal 'encoding' of my facial features that can be compared to any other picture of a face!
+# my_face_encoding은 이제 어느 얼굴과도 비교할 수 있는 내가 가진 얼굴 특징의 보편적인 인코딩을 포함하게 되었습니다. 
 
 unknown_picture = face_recognition.load_image_file("unknown.jpg")
 unknown_face_encoding = face_recognition.face_encodings(unknown_picture)[0]
 
-# Now we can see the two face encodings are of the same person with `compare_faces`!
+# 이제 `compare_faces`를 통해 두 얼굴이 같은 얼굴인지 비교할 !
 
 results = face_recognition.compare_faces([my_face_encoding], unknown_face_encoding)
 
@@ -351,4 +351,4 @@ GPU (드라이버 >= 384.81) 및 [Nvidia-Docker](https://github.com/NVIDIA/nvidi
 * numpy, scipy, scikit-image, pillow 등의 모든 멋진 파이썬 데이터 과학 라이브러리에서 일하는 모든 사람들에게 감사합니다. 이런 종류의 것들을 파이썬에서 쉽고 재미있게 만듭니다.
 * [Cookiecutter](https://github.com/audreyr/cookiecutter)
 와 [audreyr/cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage)
- 프로젝트 템플릿 덕분에 파이썬 프로젝트 패키징 방식이 웬만큼 괜찮아 졌습니다.
+ 프로젝트 템플릿 덕분에 파이썬 프로젝트 패키징 방식이 더 괜찮아 졌습니다.
